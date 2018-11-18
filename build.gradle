@@ -1,0 +1,18 @@
+apply plugin: 'java-library'
+
+group = 'martinstraus'
+version = '1.0.0'
+
+repositories {
+    jcenter()
+    maven {
+        url 'https://github.com/mercadopago/sdk-java/raw/master/releases'
+    }
+}
+
+dependencies {
+    implementation 'com.mercadopago:sdk:0.3.4'
+    implementation 'javax.money:money-api:1.0.1'
+    implementation 'org.javamoney:moneta:1.1'
+    testImplementation 'junit:junit:4.12'
+}
